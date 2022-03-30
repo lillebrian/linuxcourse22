@@ -1,4 +1,0 @@
-[ZoneTransfer]
-ZoneId=3
-ReferrerUrl=https://github.com/zyedidia/micro/releases
-HostUrl=https://objects.githubusercontent.com/github-production-release-asset-2e65be/53632140/73051203-ab44-4715-8899-6fdae4ec096c?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20220330%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20220330T124924Z&X-Amz-Expires=300&X-Amz-Signature=90f1bbb13261a7c0ebe139c71b017b36da8077c87281dd2ea4361ae03cd27596&X-Amz-SignedHeaders=host&actor_id=55744713&key_id=0&repo_id=53632140&response-content-disposition=attachment%3B%20filename%3Dmicro-2.0.10-amd64.deb&response-content-type=application%2Foctet-stream
