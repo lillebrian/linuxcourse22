@@ -1,0 +1,22 @@
+#!/bin/bash
+#Connecter til vores ip addresee (kan måske bruge server72 istedet.)
+#ssh -f -N -L 2227:192.168.150.114:22 passthru@omicron2.eitlab.diplom.dtu.dk
+IS_RUNNING="$(lsof -t -i:2227)"
+
+if [ "$IS_RUNNING" == "" ]; then
+    ssh -f -N -L 2227:192.168.150.24:22 passthru@omicron2.eitlab.diplom.dtu.dk 
+    echo "Kan bruge kill '$(lsof -t -i:2227)' til at lukke ssh connectionen"
+else 
+    echo "ssh connection allerede etableret $IS_RUNNING"
+    echo "for at lukke, 'kill $IS_RUNNING'"
+fi
+
+#kan nu connecte til vm terminal
+read -p "connect vm terminal i vinduet? (y/n):" ANSW
+if [ "$ANSW" == "y" ]; then
+	ssh -p 2227 merithz@localhost
+fi
+if [ "$ANSW" == "n" ]; then
+	echo "ssh to vm established"
+fi
+                        # kan bruge kill $(lsof -t -i:2227)  til at dræbe ssh connection
